@@ -2,7 +2,7 @@
 ````
 npm i
 ````
-Edit ``publick/resume.json`` as your infomation then:
+Edit ``public/resume.json`` as your infomation then:
 ````
 npm run build
 ````

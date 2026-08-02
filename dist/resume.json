@@ -10,14 +10,17 @@
   "slogan":"不懂设计的前端不是好产品",
   "tips":"Ctrl+p可以印本简历，打印时显示真名",
   "education":"专科",
-  "phone":15001827426,
-  "location":"Wuhan·China",
+  "wechat":{
+    "number":"hao_dev",
+    "qr":"./img/wechat-qr.png"
+  },
+  "location":"Shiyan·China",
   "qq":{
     "number":"790313188"
   },
   "website":"http://79px.com",
   "github":"https://github.com/eternityspring",
-  "email":"eternityspring@163.com",
+  "email":"eternityspring@gmail.com",
   "intro":{
     "content":[
       "6年+工作经验。4年＋的一线城市前端研发经验，其中包括一年带团队经验。能搭建持续集成的开发环境。有着高效的项目协调与推进经验。",
@@ -36,17 +39,18 @@
   },
   "experience":[
     {
-      "time":"2019.01-today",
-      "title":"自由职业者",
-      "intro":"前端/产品负责人",
-      "description":"先后合作了多个项目。有单独负责前端架构，有负责产品迭代根据人员协调等。丰富的前端开发经验。高效的沟通项目推进能力。",
+      "time":"2019.01-至今",
+      "title":"远程办公",
+      "intro":"前端开发",
+      "description":"2019 年起转为全远程工作。初期以自由职业形式承接多个项目，负责前端架构与产品迭代推进；2020 年 12 月起加入一家跨国医药市场准入数据服务公司，远程协作至今。",
       "tips":[
         {
           "title":"主要业绩：",
           "content":[
-            "主导架构设计了一个复杂的BS架构的业务系统。",
-            "主要推进了一个2B的BS架构产品的迭代研发。从产品设计到产品交付全程参与。",
-            "完成一个2C的产品的前端部分。"
+            "长期负责数据情报平台的核心业务模块，为该仓库核心贡献者之一；2024 年底起主导模块内的大模型能力落地。",
+            "独立从 0 到 1 完成并持续维护一个资讯与邮件推送产品，占该仓库 95% 的提交。",
+            "自由职业期间主导架构设计了一个复杂的 BS 架构业务系统，全程参与一个 2B 产品从设计到交付的迭代研发，并完成一个 2C 产品的前端部分。",
+            "连续六年以全远程方式与跨时区团队协作交付。"
           ]
         }
       ],
@@ -54,7 +58,7 @@
         {
           "title":"技术栈：",
           "content":[
-            "node.js","vue","element-ui","scss","webpack","axure"
+            "Angular","TypeScript","Vue 3","RxJS","Element Plus","scss","webpack","node.js","axure"
           ]
         }
       ]
@@ -153,32 +157,32 @@
   ],
   "skill":[
     {
-      "name":"Css",
-      "percent":"95%"
+      "name":"Claude Code",
+      "percent":"90%"
     },
     {
-      "name":"Axure",
-      "percent":"75%"
+      "name":"codex",
+      "percent":"90%"
+    },
+    {
+      "name":"Css",
+      "percent":"95%"
     },
     {
       "name":"JavaScript",
       "percent":"85%"
     },
     {
-      "name":"PhotoShop",
-      "percent":"80%"
-    },
-    {
       "name":"Node.js",
       "percent":"70%"
     },
     {
-      "name":"MongoDB",
-      "percent":"60%"
+      "name":"Axure",
+      "percent":"75%"
     },
     {
-      "name":"Bootstrap",
-      "percent":"95%"
+      "name":"MongoDB",
+      "percent":"60%"
     },
     {
       "name":"Vue",
@@ -186,6 +190,70 @@
     }
   ],
   "project":[
+    {
+      "time":"2021.12-至今",
+      "title":"医药市场准入数据平台",
+      "intro":"跨国 SaaS 数据产品 · 前端核心开发",
+      "description":"面向药企定价与市场准入决策的数据情报平台，包含 30 余个业务模块。四年半累计提交 1449 次（2024 年单年 441 次），为该仓库核心贡献者之一。",
+      "tips":[
+        {
+          "title":"主要工作：",
+          "content":[
+            "长期负责「类似药分析」核心模块，累计 718 次提交、3000+ 次文件改动，涵盖适应症筛选、主次要终点、报销明细查询、筛选器重构与工作区等功能。",
+            "参与产品全景、药品短缺、国家指南、HTA 浏览器、国际参考定价等模块的设计与迭代。",
+            "2024 年底起主导模块内的大模型能力落地：AI 摘要生成、Markdown 结构化输出、超长上下文截断处理、权限控制与报告保存。",
+            "接入 Amplitude 行为埋点，支撑产品侧的使用分析。"
+          ]
+        }
+      ],
+      "technology":[
+        {
+          "title":"技术栈：",
+          "content":[
+            "Angular","TypeScript","RxJS","Angular Material","Tailwind CSS","Vitest","Karma","Puppeteer","Jenkins","SonarQube"
+          ]
+        }
+      ]
+    },
+    {
+      "time":"2020.12-2026.06",
+      "title":"行业资讯与邮件推送产品",
+      "intro":"从 0 到 1 独立开发的资讯产品",
+      "description":"面向订阅用户的行业资讯产品，由本人发起并独立完成前端全部开发，占仓库 739/778 次提交（95%），持续维护五年半。",
+      "tips":[
+        {
+          "title":"主要工作：",
+          "content":[
+            "独立完成前台与后台管理系统：文章发布与富文本编辑、邮件订阅推送、书签收藏、分类与关键词检索、验证码登录与账号设置。",
+            "自行搭建项目基础设施：路由、状态管理、请求封装、多环境构建（QA / 生产）与样式体系。"
+          ]
+        }
+      ],
+      "technology":[
+        {
+          "title":"技术栈：",
+          "content":[
+            "Vue 3","Element Plus","Froala","Vue Router","Vuex","Axios","Webpack","SCSS"
+          ]
+        }
+      ]
+    },
+    {
+      "time":"2021.06-2026.06",
+      "title":"上一代业务平台维护",
+      "intro":"AngularJS 遗留系统 · 与新平台并行维护",
+      "description":"与新平台并行运行的上一代业务系统，参与功能迭代与缺陷修复，累计 297 次提交，保障两套系统并行期间的业务连续性。",
+      "technology":[
+        {
+          "title":"技术栈：",
+          "content":[
+            "AngularJS","Ionic","SCSS","Gulp"
+          ]
+        }
+      ]
+    }
+  ],
+  "earlyProject":[
     {
       "time":"2018.03-2018.07",
       "title":"尚德机构",
@@ -313,26 +381,52 @@
       "description":"个人为主体的，业余做着玩的防止聚会无聊的小程序。在微信小程序中搜索'黄龙客栈'即可查看。"
     }
   ],
+  "openSource":[
+    {
+      "name":"article-tools",
+      "link":"https://github.com/eternityspring/article-tools",
+      "description":"一套封面制作和 X、微信公众号排版工具"
+    },
+    {
+      "name":"eternityspring.github.io",
+      "link":"https://github.com/eternityspring/eternityspring.github.io",
+      "description":"在线简历生成模板 本页面即由它生成"
+    },
+    {
+      "name":"agent-light",
+      "link":"https://github.com/eternityspring/agent-light",
+      "description":"Claude Code 状态灯系统"
+    },
+    {
+      "name":"Coverly",
+      "link":"https://github.com/eternityspring/Coverly",
+      "description":"不用 canvas 的 DOM 原生封面与图文卡片编辑器 Nuxt 4 + Vue 3 + Pinia"
+    },
+    {
+      "name":"十二经络 3D",
+      "description":"HarmonyOS 混合应用 WebView + TypeScript（私有项目）"
+    }
+  ],
   "usually":[
+    {
+      "name":"X",
+      "link":"https://x.com/eternityspring",
+      "description":"关注一线技术动态 分享自己的作品"
+    },
     {
       "name":"GitHub",
       "link":"https://github.com/eternityspring",
       "description":"分享一些我的小作品 结交志同道合的朋友"
     },
     {
-      "name":"知乎",
-      "link":"https://www.zhihu.com/people/790313188",
-      "description":"探索新奇 关注互联网用户的关注热点"
+      "name":"V2EX",
+      "link":"https://www.v2ex.com",
+      "description":"国内开发者社区 看看大家都在折腾什么"
     },
     {
-      "name":"人人都是产品经理",
-      "link":"http://www.woshipm.com",
-      "description":"学习产品思路 锻炼良好用户体验的思维模式"
-    },
-    {
-      "name":"MDN",
-      "link":"https://developer.mozilla.org",
-      "description":"查阅一些技术文档"
+      "name":"Linux do",
+      "link":"https://linux.do/",
+      "description":"技术折腾者聚集地 追新工具和 AI 动态"
     },
     {
       "name":"Behance",

@@ -1,12 +1,14 @@
 <script>
-  import { onMounted, ref } from "vue";
+  import { computed, onMounted, ref } from "vue";
 
   export default {
     setup(){
       const loading = ref(true)
+      const showEarly = ref(false)
       const userInfo = ref({
         exp:[],
         qq:{},
+        wechat:{},
         intro:{
           content:[],
           technology:{
@@ -29,8 +31,13 @@
           },
           technology:[],
         }],
+        earlyProject:[],
+        openSource:[],
         usually:[],
       })
+      const projects = computed(()=> showEarly.value
+        ? userInfo.value.project.concat(userInfo.value.earlyProject)
+        : userInfo.value.project)
       let getUserInfo = async ()=>{
         userInfo.value = await fetch('./resume.json').then(res => res.json())
         loading.value = false
@@ -45,6 +52,8 @@
         calcDate,
         userInfo,
         loading,
+        showEarly,
+        projects,
       }
     }
   }
@@ -108,9 +117,12 @@
               </div>
               <div class="row">
                 <div class="col-md-6 col-lg-3">
-                  <div class="item wow inShow" data-wow-delay="0.6s">
-                    <h4>Phone</h4>
-                    <address class="info">{{userInfo.phone}}</address>
+                  <div class="item wow inShow wechat" data-wow-delay="0.6s">
+                    <h4>WeChat</h4>
+                    <address class="info">{{userInfo.wechat.number}}</address>
+                    <div class="qr no-print" v-if="userInfo.wechat.qr">
+                      <img :src="userInfo.wechat.qr" alt="WeChat QR">
+                    </div>
                   </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
@@ -239,14 +251,15 @@
         <header class="header">
           <div class="content-box">
             <h2 class="title">项目经验&nbsp;/&nbsp;
-              <small><i>Experience</i></small>
+              <small><i>Projects</i></small>
             </h2>
             <div class="description">近期主要做过的一些项目</div>
           </div>
         </header>
         <div class="section-content">
           <div class="experience">
-            <div class="item" v-for="item in userInfo.project" :key="item.title">
+            <div class="item" v-for="(item,idx) in projects" :key="idx"
+                 :class="{'no-print':idx>=userInfo.project.length}">
               <div class="row">
                 <div class="col-md-5">
                   <div class="time">{{item.time}}</div>
@@ -268,6 +281,40 @@
                     </ul>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="early-toggle no-print">
+            <a @click="showEarly = !showEarly">
+              {{showEarly ? '收起早期项目' : '查看早期项目（'+userInfo.earlyProject.length+' 项）'}}
+              <span class="arrow" :class="{open:showEarly}">▾</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="section-bg section-header-bg"></div>
+        <div class="section-bg section-content-bg"></div>
+        <header class="header">
+          <div class="content-box">
+            <h2 class="title">开源作品&nbsp;/&nbsp;
+              <small><i>Open Source</i></small>
+            </h2>
+            <div class="description">业余时间做的一些开源项目</div>
+          </div>
+        </header>
+        <div class="section-content">
+          <div class="row usually open-source">
+            <div class="col-lg-4 col-md-6" v-for="(repo,repoIndex) in userInfo.openSource" :key="repoIndex">
+              <a v-if="repo.link" :href="repo.link" target="_blank" class="item" :title="repo.link">
+                <h3 class="text-light">{{repo.name}}</h3>
+                <p>{{repo.description}}</p>
+              </a>
+              <div v-if="!repo.link" class="item">
+                <h3 class="text-light">{{repo.name}}</h3>
+                <p>{{repo.description}}</p>
               </div>
             </div>
           </div>
@@ -320,9 +367,12 @@
           <div class="contact">
             <div class="row">
               <div class="col-md-6 col-lg-3">
-                <div class="item">
-                  <h4>Phone</h4>
-                  <div class="info">{{userInfo.phone}}</div>
+                <div class="item wechat">
+                  <h4>WeChat</h4>
+                  <div class="info">{{userInfo.wechat.number}}</div>
+                  <div class="qr no-print" v-if="userInfo.wechat.qr">
+                    <img :src="userInfo.wechat.qr" alt="WeChat QR">
+                  </div>
                 </div>
               </div>
               <div class="col-md-6 col-lg-3">

@@ -278,11 +278,53 @@ ul{
     }
   }
 }
+.early-toggle{
+  margin-top:1rem;
+  padding-left:26px;
+  a{
+    cursor:pointer;
+    color:$text-gray;
+    &:hover{
+      color:$light;
+    }
+    .arrow{
+      display:inline-block;
+      margin-left:0.3rem;
+      transition:transform .2s;
+      &.open{
+        transform:rotate(180deg);
+      }
+    }
+  }
+}
 .contact{
   margin-bottom:2rem;
   h4{
     margin-top:0.3rem;
     margin-bottom: 0.8rem;
+  }
+}
+.wechat{
+  position: relative;
+  .qr{
+    position: absolute;
+    bottom:100%;
+    left:0;
+    z-index:10;
+    display:none;
+    margin-bottom:0.5rem;
+    padding:6px;
+    background:$bg1;
+    border:1px solid $border;
+    border-radius:4px;
+    img{
+      display:block;
+      width:150px;
+      height:auto;
+    }
+  }
+  &:hover .qr{
+    display:block;
   }
 }
 

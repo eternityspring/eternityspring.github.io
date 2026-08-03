@@ -1,5 +1,5 @@
 {
-  "name":"王世霖",
+  "name":"王烁皓",
   "sex":"男",
   "birthday":"1992-08-24",
   "workSince":"2012-11-01",
@@ -26,7 +26,7 @@
       "value":"前端 / 全栈"
     }
   ],
-  "tips":"Ctrl+p可以印本简历，打印时显示真名",
+  "tips":"Ctrl / Cmd + P 可以打印本简历",
   "education":"专科",
   "wechat":{
     "number":"hao_dev",
@@ -41,15 +41,15 @@
   "email":"eternityspring@gmail.com",
   "intro":{
     "content":[
-      "14 年前端开发经验，近 6 年全程远程，为美国团队跨时区交付，没有因为远程掉过链子。前端与全栈都能独立端到端负责。",
-      "主力技术栈 TypeScript + Angular / Vue 3 / Nuxt 4。近一年独立完成三个 Nuxt 4 全栈应用，涵盖 PostgreSQL schema 设计与版本化迁移、鉴权体系、API 分层与数据校验，从数据库到界面全部自己写。",
-      "2024 年底起在生产环境落地大模型能力：AI 摘要生成、Markdown 结构化输出、超长上下文处理、流式响应与权限控制。不是 demo，是每天有人在用的功能。",
-      "<b>希望把这些年积累的工程经验，用在能独立端到端交付的位置上。</b>"
+      "14 年前端开发经验，近 6 年全程远程，为美国团队跨时区交付。前端与全栈都能独立负责。",
+      "主力技术栈 TypeScript + Angular / Vue 3 / Nuxt 4 / Node.js。近一年独立完成三个 Nuxt 4 全栈应用，涵盖 PostgreSQL schema 设计与版本化迁移、鉴权体系、API 分层与数据校验，从数据库到界面全部自己写。",
+      "2024 年底起在生产环境落地大模型能力：AI 摘要生成、Markdown 结构化输出、超长上下文处理、流式响应与权限控制。",
+      "<b>AI 正在重写软件的交付方式，希望继续做交付的人，而不是围观的人。接下来想继续做 AI 与产品结合的事，把能力用在能独立交付的位置上。</b>"
     ],
     "technology":{
       "title":"技术栈和工具：",
       "content":[
-        "TypeScript","Angular","Vue 3","Nuxt 4","RxJS","Node.js","PostgreSQL","Drizzle ORM","Tailwind CSS","scss","Vite","Vitest"
+        "TypeScript","Angular","Vue 3","Nuxt 4","RxJS","Node.js","PostgreSQL","Drizzle ORM","Tailwind CSS","SCSS","Vite","Vitest"
       ]
     }
   },
@@ -74,7 +74,7 @@
         {
           "title":"技术栈：",
           "content":[
-            "Angular","TypeScript","Vue 3","RxJS","Element Plus","scss","webpack","node.js","axure"
+            "Angular","TypeScript","Vue 3","RxJS","Element Plus","SCSS","Webpack","Node.js","Figma"
           ]
         }
       ]
@@ -88,7 +88,7 @@
         {
           "title":"技术栈：",
           "content":[
-            "vue","node.js","element-ui","小程序"
+            "Vue","Node.js","Element UI","小程序"
           ]
         }
       ]
@@ -102,7 +102,7 @@
         {
           "title":"技术栈：",
           "content":[
-            "vue","node.js","scss","webpack"
+            "Vue","Node.js","SCSS","Webpack"
           ]
         }
       ]
@@ -111,12 +111,12 @@
       "time":"2015.02-2016.11",
       "title":"云知声",
       "intro":"前端开发",
-      "description":"负责两个 K12 教育产品的前端，覆盖学生端、老师端、微信家长端与管理后台，并用 ionic 打包了其中一个产品的 Android / iOS 老师端。搭建了基于 node.js 的自动化构建流程，解决发版缓存与测试环境部署问题。",
+      "description":"负责两个 K12 教育产品的前端，覆盖学生端、老师端、微信家长端与管理后台，并用 Ionic 打包了其中一个产品的 Android / iOS 老师端。搭建了基于 Node.js 的自动化构建流程，解决发版缓存与测试环境部署问题。",
       "technology":[
         {
           "title":"技术栈：",
           "content":[
-            "angular","node.js","scss","gulp","ionic"
+            "Angular","Node.js","SCSS","Gulp","Ionic"
           ]
         }
       ]
@@ -131,7 +131,7 @@
       "time":"2012-2013",
       "title":"武汉 / 十堰",
       "intro":"入行初期",
-      "description":"毕业于武汉软件工程职业技术学院，从 drupal、wordpress 的主题开发入行。"
+      "description":"毕业于武汉软件工程职业技术学院，从 Drupal、WordPress 的主题开发入行。"
     }
 
   ],
@@ -139,13 +139,13 @@
     {
       "title":"前端",
       "content":[
-        "TypeScript","JavaScript","Angular","Vue 3","Nuxt 4","RxJS","Tailwind CSS","scss","CSS 动画"
+        "TypeScript","JavaScript","Angular","Vue 3","Nuxt 4","RxJS","Tailwind CSS","SCSS","CSS 动画"
       ]
     },
     {
       "title":"后端与数据",
       "content":[
-        "Node.js","Nitro","RESTful API","PostgreSQL","Drizzle ORM","MongoDB","zod","鉴权与权限设计"
+        "Node.js","Nitro","RESTful API","PostgreSQL","Drizzle ORM","MongoDB","Zod","鉴权与权限设计"
       ]
     },
     {
@@ -181,7 +181,7 @@
         {
           "title":"技术栈：",
           "content":[
-            "Nuxt 4","Vue 3","TypeScript","Drizzle ORM","PostgreSQL","zod","Pinia","Tailwind CSS"
+            "Nuxt 4","Vue 3","TypeScript","Drizzle ORM","PostgreSQL","Zod","Pinia","Tailwind CSS"
           ]
         }
       ]
@@ -239,14 +239,14 @@
     {
       "time":"2018.03-2018.07",
       "title":"尚德机构",
-      "intro":"一个销售统计分析工具。",
-      "description":"一个销售情况的统计分析平台的前端架构设计和迭代实现。",
+      "intro":"销售业务统计分析平台",
+      "description":"负责该平台的前端架构设计与迭代实现。",
       "tips":[
         {
           "title":"实现的主要功能：",
           "content":[
-            "录入系统",
-            "分析对比报表"
+            "数据录入系统",
+            "对比分析报表"
           ]
         }
       ],
@@ -254,7 +254,7 @@
         {
           "title":"技术栈：",
           "content":[
-            "node.js","vue","scss","webpack","element-ui"
+            "Node.js","Vue","SCSS","Webpack","Element UI"
           ]
         }
       ]
@@ -262,18 +262,17 @@
     {
       "time":"2017.06-2018.03",
       "title":"中科金服",
-      "intro":"一个B2P的借贷平台和一个后台管理系统",
-      "description":"一个金融平台正常维护，包括优惠券体验金以及各种不同产品的迭代和重构。以及各种活动页面的制作和实现。协调前端小组工作和工作流的优化。",
+      "intro":"B2P 借贷平台与后台管理系统",
+      "description":"负责借贷平台的日常迭代与重构，覆盖多种理财产品、营销活动页与后台管理，并协调前端小组的工作与流程优化。",
       "tips":[
         {
           "title":"实现的主要功能：",
           "content":[
-            "管理后台",
-            "加息券、体验金",
-            "亲子标",
-            "定融计划",
-            "活动页面",
-            "vue重构整个项目"
+            "后台管理系统",
+            "加息券、体验金等营销激励功能",
+            "亲子标、定融计划等理财产品",
+            "营销活动页面",
+            "用 Vue 重构整个项目"
           ]
         }
       ],
@@ -281,7 +280,7 @@
         {
           "title":"技术栈：",
           "content":[
-            "node.js","vue","scss","webpack","bootstrap"
+            "Node.js","Vue","SCSS","Webpack","Bootstrap"
           ]
         }
       ]
@@ -289,16 +288,16 @@
     {
       "time":"自毕业后",
       "title":"个人网站",
-      "intro":"全栈开发的学习与研究,部署于阿里云",
-      "description":"自毕业后创建与维护一个个人网站。在学 nodejs 之前，是基于 drupal 做的。自己独立开发的主题，广受欢迎。在学习了nodejs后，后端基于 nodejs 的 express 和 Mongodb，前端基于 angularjs 和 bootstrap 使用 restful 风格重做了一遍。历时1年。整个网站的迭代是我整个技术栈成长的缩影。目前正在用Vue重构设计。",
+      "intro":"全栈开发的学习与实践，部署于阿里云",
+      "description":"毕业后创建并长期维护的个人网站。最初基于 Drupal 自行开发主题；学习 Node.js 后，改为 Express + MongoDB 做后端、AngularJS + Bootstrap 做前端，以 RESTful 风格整体重做，历时一年。这个网站的迭代是我技术栈成长的缩影。",
       "tips":[
         {
           "title":"实现的主要功能：",
           "content":[
-            "用户登录注册以及用户管理。",
-            "创建管理有序且有层级关系的教程文档。",
-            "针对注册用户订购网站会员的订单系统。",
-            "博客系统。"
+            "用户登录注册与用户管理",
+            "有层级关系的教程文档管理",
+            "面向注册用户的会员订单系统",
+            "博客系统"
           ]
         }
       ],
@@ -306,7 +305,7 @@
         {
           "title":"技术栈：",
           "content":[
-            "node.js","angular","scss","gulp","bootstrap","express","mongodb","vue","Axure"
+            "Node.js","Angular","SCSS","Gulp","Bootstrap","Express","MongoDB","Vue","Axure"
           ]
         }
       ]
@@ -314,16 +313,16 @@
     {
       "time":"2015.02-2015.10",
       "title":"听说通",
-      "intro":"一个K12领域在线教育产品",
-      "description":"在此期间参与了一个教育产品包括学生端、老师端、微信家长端以及学校管理员管理后台几个系统的前端方便的工作。微信家长端是基于vue.js制作，其他部分是基于angular和bootstrap利用gulp等一系列nodejs构建完成。",
+      "intro":"K12 在线教育产品",
+      "description":"负责学生端、老师端、微信家长端与学校管理后台的前端开发。微信家长端基于 Vue.js，其余部分基于 Angular + Bootstrap，用 Gulp 等 Node.js 工具链构建。",
       "tips":[
         {
           "title":"实现的主要功能：",
           "content":[
-            "老师端：根据现有内容库发布、批改作业。管理班级和学生等。",
-            "学生端：查看和完成老师布置作业。",
-            "家长端：通过微信公众号绑定和管理自己的孩子方便查看孩子的作业情况。",
-            "学校管理后台：管理老师学生教材等。"
+            "老师端：从内容库发布与批改作业，管理班级和学生",
+            "学生端：查看并完成老师布置的作业",
+            "家长端：通过微信公众号绑定孩子，查看作业情况",
+            "学校管理后台：管理老师、学生与教材"
           ]
         }
       ],
@@ -331,7 +330,7 @@
         {
           "title":"技术栈：",
           "content":[
-            "node.js","angular","scss","gulp","bootstrap"
+            "Node.js","Angular","SCSS","Gulp","Bootstrap"
           ]
         }
       ]
@@ -339,13 +338,13 @@
     {
       "time":"2015.11-2016.08",
       "title":"U学",
-      "intro":"一个闯关形式的在线教育产品",
-      "description":"与之前的听说通类似。如果之前的产品是淘宝模式，那么这个产品就是京东模式。同样包括学生端，老师端和微信家长端以及管理后台。除此之外，我们还利用ionic基于前端技术制作老师移动端分别打包成了android和ios应用。",
+      "intro":"闯关形式的在线教育产品",
+      "description":"与听说通同属一条产品线，同样包含学生端、老师端、微信家长端与管理后台。此外用 Ionic 将老师移动端分别打包为 Android 与 iOS 应用。",
       "technology":[
         {
           "title":"技术栈：",
           "content":[
-            "node.js","angular","scss","gulp","bootstrap"
+            "Node.js","Angular","SCSS","Gulp","Bootstrap"
           ]
         }
       ]
@@ -353,14 +352,14 @@
     {
       "time":"2014.03-2015.01",
       "title":"Trafish",
-      "intro":"一个入境游在线旅游产品",
-      "description":"这个产品是前后端混合开发的。都是写的jsp页面。完成了线上订购旅游产品的一个网站和管理订单和用户的管理后台。"
+      "intro":"入境游在线旅游产品",
+      "description":"前后端混合开发的 JSP 项目。完成了旅游产品在线订购网站，以及订单与用户管理后台。"
     },
     {
       "time":"2017.10-2017.10",
       "title":"黄龙客栈",
-      "intro":"一个聚会娱乐小程序。",
-      "description":"个人为主体的，业余做着玩的防止聚会无聊的小程序。在微信小程序中搜索'黄龙客栈'即可查看。"
+      "intro":"聚会娱乐小程序",
+      "description":"业余时间做的聚会小游戏，在微信小程序中搜索「黄龙客栈」可见。"
     }
   ],
   "openSource":[

@@ -6,7 +6,7 @@
       const loading = ref(true)
       const showEarly = ref(false)
       const userInfo = ref({
-        exp:[],
+        highlights:[],
         qq:{},
         wechat:{},
         intro:{
@@ -42,14 +42,8 @@
         userInfo.value = await fetch('./resume.json').then(res => res.json())
         loading.value = false
       }
-      const calcDate = (birthday)=>{
-        let birthdayDate = new Date(birthday);
-        let todyDate = new Date();
-        return todyDate.getYear() - birthdayDate.getYear()
-      }
       onMounted(getUserInfo)
       return {
-        calcDate,
         userInfo,
         loading,
         showEarly,
@@ -74,7 +68,7 @@
         <header class="header">
           <div class="header-box">
             <div class="avatar wow inShow no-print">
-              <img src="../public/img/logo.jpg" alt="logo" class="img-responsive">
+              <img src="../public/img/logo.png" alt="logo" class="img-responsive">
             </div>
             <h1 class="name text-center wow inShow no-print">{{userInfo.nickname}}</h1>
             <h1 class="name text-center hide show-print-block">{{userInfo.name}}</h1>
@@ -90,29 +84,11 @@
             </div>
             <div class="contact-info">
               <div class="row">
-                <div class="col-md-6 col-lg-3">
-                  <div class="item wow inShow" data-wow-delay="0.3s">
-                    <h4>性别</h4>
-                    <div class="info">{{userInfo.sex}}</div>
+                <div class="col-md-6 col-lg-3" v-for="(hl,hlIndex) in userInfo.highlights" :key="hlIndex">
+                  <div class="item wow inShow">
+                    <h4>{{hl.label}}</h4>
+                    <div class="info">{{hl.value}}</div>
                   </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                  <div class="item wow inShow" data-wow-delay="0.45s">
-                    <h4>年龄</h4>
-                    <div class="info">{{calcDate(userInfo.birthday)}}</div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                  <div class="item wow inShow" data-wow-delay="0.5s" :href="'mailto:'+userInfo.email">
-                    <h4>学历</h4>
-                    <div class="info">{{userInfo.education}}</div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                  <a class="item wow inShow" data-wow-delay="0.55s" :href="userInfo.website" target="_blank">
-                    <h4>经验</h4>
-                    <div class="info">{{userInfo.exp[0]+(calcDate(userInfo.workSince)-1)+userInfo.exp[1]+calcDate(userInfo.workSince)+userInfo.exp[2]}}</div>
-                  </a>
                 </div>
               </div>
               <div class="row">
@@ -229,16 +205,12 @@
           </div>
         </header>
         <div class="section-content">
-          <div class="row skill">
-            <div class="col-md-6" v-for="skill in userInfo.skill" :key="skill.name">
-              <div class="item">
-                <div class="text-info">
-                  <span class="num text-light">{{skill.percent}}</span>{{skill.name}}
-                </div>
-                <div class="progress">
-                  <div class="progress-bar wow progressShow" :style="'width:'+skill.percent"></div>
-                </div>
-              </div>
+          <div class="skill">
+            <div class="group" v-for="(group,groupIndex) in userInfo.skill" :key="groupIndex">
+              <b>{{group.title}}</b>
+              <ul class="inline">
+                <li v-for="item in group.content" :key="item">{{item}}</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -299,10 +271,10 @@
         <div class="section-bg section-content-bg"></div>
         <header class="header">
           <div class="content-box">
-            <h2 class="title">开源作品&nbsp;/&nbsp;
-              <small><i>Open Source</i></small>
+            <h2 class="title">个人作品&nbsp;/&nbsp;
+              <small><i>Side Projects</i></small>
             </h2>
-            <div class="description">业余时间做的一些开源项目</div>
+            <div class="description">业余时间做的一些东西</div>
           </div>
         </header>
         <div class="section-content">

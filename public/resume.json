@@ -7,7 +7,25 @@
   "nickname":"烁皓",
   "firstName":"wang",
   "lastName":"wesley",
-  "slogan":"不懂设计的前端不是好产品",
+  "slogan":"不懂设计的前端不是好全栈",
+  "highlights":[
+    {
+      "label":"前端经验",
+      "value":"14 年"
+    },
+    {
+      "label":"全远程协作",
+      "value":"6 年"
+    },
+    {
+      "label":"生产环境 LLM",
+      "value":"2 年"
+    },
+    {
+      "label":"方向",
+      "value":"前端 / 全栈"
+    }
+  ],
   "tips":"Ctrl+p可以印本简历，打印时显示真名",
   "education":"专科",
   "wechat":{
@@ -23,17 +41,15 @@
   "email":"eternityspring@gmail.com",
   "intro":{
     "content":[
-      "6年+工作经验。4年＋的一线城市前端研发经验，其中包括一年带团队经验。能搭建持续集成的开发环境。有着高效的项目协调与推进经验。",
-      "有个人网站。熟悉前端项目构建，有过基于 angular1.x 和 vue 的产品开发经验，以及微信小程序和微信公众号开发经验。自发的独立做过些许优化工作流的小工具。",
-      "喜欢开源，热爱产品，懂设计。用 node.js 做过后端。熟悉 restful 的开发模式和基于git的版本管理。习惯 PDCA 式的小步快跑工作流。",
-      "言语思考，爱折腾。精通 vue 和 angular1.x。常用 scss。爱折腾。没事喜欢做做小东西。",
-      "颇为丰富的 BS架构 web应用开发经验。有着浓厚的对产品设计的兴趣和对良好用户体验的精益求精精神。",
-      "<b>希望凭借多年互联网从业经验，最终能够成为一个优秀的产品。</b>"
+      "14 年前端开发经验，近 6 年全程远程，为美国团队跨时区交付，没有因为远程掉过链子。前端与全栈都能独立端到端负责。",
+      "主力技术栈 TypeScript + Angular / Vue 3 / Nuxt 4。近一年独立完成三个 Nuxt 4 全栈应用，涵盖 PostgreSQL schema 设计与版本化迁移、鉴权体系、API 分层与数据校验，从数据库到界面全部自己写。",
+      "2024 年底起在生产环境落地大模型能力：AI 摘要生成、Markdown 结构化输出、超长上下文处理、流式响应与权限控制。不是 demo，是每天有人在用的功能。",
+      "<b>希望把这些年积累的工程经验，用在能独立端到端交付的位置上。</b>"
     ],
     "technology":{
       "title":"技术栈和工具：",
       "content":[
-        "vue","express","mongodb","webpack","node.js","golang","scss","bootstrap","gulp","angular","photoshop","axure"
+        "TypeScript","Angular","Vue 3","Nuxt 4","RxJS","Node.js","PostgreSQL","Drizzle ORM","Tailwind CSS","scss","Vite","Vitest"
       ]
     }
   },
@@ -42,7 +58,7 @@
       "time":"2019.01-至今",
       "title":"远程办公",
       "intro":"前端开发",
-      "description":"2019 年起转为全远程工作。初期以自由职业形式承接多个项目，负责前端架构与产品迭代推进；2020 年 12 月起加入一家跨国医药市场准入数据服务公司，远程协作至今。",
+      "description":"2019 年起转为全远程工作。初期以自由职业形式承接多个项目，负责前端架构与产品迭代推进；2020 年 12 月起加入一个美国医药数据服务团队，远程协作至今。",
       "tips":[
         {
           "title":"主要业绩：",
@@ -67,22 +83,12 @@
       "time":"2018.03-2019.01",
       "title":"尚德机构",
       "intro":"前端开发",
-      "description":"转战武汉，进入尚德机构，做一些内部员工使用的管理系统，hr使用的招聘入职系统等。有参与一些活动策划和营销页策划。",
-      "tips":[
-        {
-          "title":"主要业绩：",
-          "content":[
-            "主导做了一个销售使用的业务统计分析系统。",
-            "和团队其他同事一起分享和成长。",
-            "参与一个30W+用户的小程序迭代。"
-          ]
-        }
-      ],
+      "description":"负责内部管理系统与招聘入职系统的前端开发。主导了一个销售业务统计分析系统，并参与一个 30W+ 用户的小程序迭代。",
       "technology":[
         {
           "title":"技术栈：",
           "content":[
-            "node.js","vue","element-ui","scss","webpack","bootstrap","axure","小程序"
+            "vue","node.js","element-ui","小程序"
           ]
         }
       ]
@@ -90,27 +96,13 @@
     {
       "time":"2016.12-2018.03",
       "title":"尤鹿金融",
-      "intro":"前端开发",
-      "description":"主要负责技术选型，项目构建以及金融产品项目维护，和前端新技能探索和优化。规划和实现整个前端的研发到交付流程的的优化。提高了前后端合作效率。实现了真正意义上的前后端分离。",
-      "tips":[
-        {
-          "title":"主要业绩：",
-          "content":[
-            "从4人小团队中脱颖而出做到了小组长",
-            "主导推动项目用 vue 重构。",
-            "在工作之余对 vue 和 react 等新技术做了一些调研和考量。",
-            "梳理工作流，并优化团队间相互协作沟通成本。",
-            "规划和实现了整个前端的研发到交付流程的的优化。实现前后端分离。",
-            "做一些技术分享，和一些自发制作的提测小工具。",
-            "和同事并肩奋战，从起初的项目进度慢到天天加班，经过一两个月优化后，每位同事都能熟悉理解新的工作流，并在不加班的情况下完成了更多的工作量。"
-          ]
-        }
-      ],
+      "intro":"前端开发 → 前端组长",
+      "description":"负责借贷平台的前端技术选型与架构。主导用 vue 重构核心项目，落地前后端分离，使前端可独立发版；重塑研发到交付流程后，团队从长期加班转为不加班交付更多需求。带 4 人前端小组。",
       "technology":[
         {
           "title":"技术栈：",
           "content":[
-            "node.js","vue","scss","webpack","bootstrap"
+            "vue","node.js","scss","webpack"
           ]
         }
       ]
@@ -119,24 +111,12 @@
       "time":"2015.02-2016.11",
       "title":"云知声",
       "intro":"前端开发",
-      "description":"期间，大部分精力都用于钻研和探索前端的工程化。代码从css转到less，从less转到scss。学习了nodejs，熟悉了gulp。基于gulp做了很多前端自动化构建的工具。同时，也学习和使用了一些前端框架如：angular、vuejs等。",
-      "tips":[
-        {
-          "title":"主要业绩：",
-          "content":[
-            "做了两个教育产品的pc端。包括学生端老师端和管理后台。",
-            "用 ionic 基于 html5 做了其中一个产品的老师端app（包括 android 和 ios）。",
-            "微信公众号的开发。",
-            "利用 node.js 一系列工具实现了前端代码自动添加版本戳解决发版缓存问题。实现了自动打包发版部署测试环境。 探索并设计了适用于复杂的产品OEM的前端架构。",
-            "利用工作之余探索并实现了前端自动化测试。"
-          ]
-        }
-      ],
+      "description":"负责两个 K12 教育产品的前端，覆盖学生端、老师端、微信家长端与管理后台，并用 ionic 打包了其中一个产品的 Android / iOS 老师端。搭建了基于 node.js 的自动化构建流程，解决发版缓存与测试环境部署问题。",
       "technology":[
         {
           "title":"技术栈：",
           "content":[
-            "node.js","angular","scss","gulp","bootstrap","ionic","webpack"
+            "angular","node.js","scss","gulp","ionic"
           ]
         }
       ]
@@ -145,55 +125,71 @@
       "time":"2014.03-2015.01",
       "title":"上海传斐信息技术有限公司",
       "intro":"前端开发",
-      "description":"14年年初，来到上海，就职于传斐科技信息有限公司。从事前端开发方面工作。成果：完成了一个旅游网站的pc、手机以及管理后台的前端工作。与此同时，养成了以产品的思维来开展工作的习惯。 "
+      "description":"完成一个入境游旅游网站的 PC、移动端与管理后台前端。"
     },
     {
-      "time":"2012年-2013年",
-      "title":"先后在湖北武汉/十堰工作",
-      "intro":"其中包括1年的实习时间",
-      "description":"毕业于武汉软件工程职业技术学院。先后在武汉和老家湖北十堰工作一年。期间，主要精力用于钻研学习一个基于php的cms：drupal。与此同时，学会了drupal以及wordpress之类的cms的常用操作和主题开发。"
+      "time":"2012-2013",
+      "title":"武汉 / 十堰",
+      "intro":"入行初期",
+      "description":"毕业于武汉软件工程职业技术学院，从 drupal、wordpress 的主题开发入行。"
     }
 
   ],
   "skill":[
     {
-      "name":"Claude Code",
-      "percent":"90%"
+      "title":"前端",
+      "content":[
+        "TypeScript","JavaScript","Angular","Vue 3","Nuxt 4","RxJS","Tailwind CSS","scss","CSS 动画"
+      ]
     },
     {
-      "name":"codex",
-      "percent":"90%"
+      "title":"后端与数据",
+      "content":[
+        "Node.js","Nitro","RESTful API","PostgreSQL","Drizzle ORM","MongoDB","zod","鉴权与权限设计"
+      ]
     },
     {
-      "name":"Css",
-      "percent":"95%"
+      "title":"AI 工程",
+      "content":[
+        "生产环境 LLM 集成","SSE 流式响应","Prompt 设计","长上下文处理","Claude Code","Codex"
+      ]
     },
     {
-      "name":"JavaScript",
-      "percent":"85%"
-    },
-    {
-      "name":"Node.js",
-      "percent":"70%"
-    },
-    {
-      "name":"Axure",
-      "percent":"75%"
-    },
-    {
-      "name":"MongoDB",
-      "percent":"60%"
-    },
-    {
-      "name":"Vue",
-      "percent":"90%"
+      "title":"工程化与协作",
+      "content":[
+        "Vite","Webpack","Vitest","Karma","Puppeteer","Jenkins","SonarQube","Git"
+      ]
     }
   ],
   "project":[
     {
+      "time":"2026.01-至今",
+      "title":"独立全栈项目",
+      "intro":"Nuxt 4 全栈应用 · 个人项目",
+      "description":"近一年独立设计并实现的三个 Nuxt 4 全栈应用，从数据库到界面全部由本人完成，其中 Coverly 已开源。",
+      "tips":[
+        {
+          "title":"主要工作：",
+          "content":[
+            "PostgreSQL schema 设计与版本化迁移，基于 Drizzle ORM 搭建类型安全的数据访问层。",
+            "自建鉴权体系、后台管理与业务 API，使用 zod 做请求与响应校验。",
+            "Coverly 是一个不依赖 canvas、纯 DOM 实现的封面与图文卡片编辑器，服务端含鉴权与 agent 接口。"
+          ]
+        }
+      ],
+      "technology":[
+        {
+          "title":"技术栈：",
+          "content":[
+            "Nuxt 4","Vue 3","TypeScript","Drizzle ORM","PostgreSQL","zod","Pinia","Tailwind CSS"
+          ]
+        }
+      ]
+    },
+    {
       "time":"2021.12-至今",
       "title":"医药市场准入数据平台",
-      "intro":"跨国 SaaS 数据产品 · 前端核心开发",
+      "intro":"美国 SaaS 数据产品 · 前端核心开发",
       "description":"面向药企定价与市场准入决策的数据情报平台，包含 30 余个业务模块。四年半累计提交 1449 次（2024 年单年 441 次），为该仓库核心贡献者之一。",
       "tips":[
         {
@@ -234,20 +230,6 @@
           "title":"技术栈：",
           "content":[
             "Vue 3","Element Plus","Froala","Vue Router","Vuex","Axios","Webpack","SCSS"
-          ]
-        }
-      ]
-    },
-    {
-      "time":"2021.06-2026.06",
-      "title":"上一代业务平台维护",
-      "intro":"AngularJS 遗留系统 · 与新平台并行维护",
-      "description":"与新平台并行运行的上一代业务系统，参与功能迭代与缺陷修复，累计 297 次提交，保障两套系统并行期间的业务连续性。",
-      "technology":[
-        {
-          "title":"技术栈：",
-          "content":[
-            "AngularJS","Ionic","SCSS","Gulp"
           ]
         }
       ]
@@ -383,6 +365,10 @@
   ],
   "openSource":[
     {
+      "name":"TimeSugar",
+      "description":"面向独立开发者的数字资产站 Nuxt 4 全栈 含 OAuth 登录、支付结算、授权下载与分销体系（私有项目）"
+    },
+    {
       "name":"article-tools",
       "link":"https://github.com/eternityspring/article-tools",
       "description":"一套封面制作和 X、微信公众号排版工具"
@@ -400,7 +386,7 @@
     {
       "name":"Coverly",
       "link":"https://github.com/eternityspring/Coverly",
-      "description":"不用 canvas 的 DOM 原生封面与图文卡片编辑器 Nuxt 4 + Vue 3 + Pinia"
+      "description":"Nuxt 4 全栈应用 纯 DOM 实现的封面与图文卡片编辑器 含鉴权与 Postgres 数据层"
     },
     {
       "name":"十二经络 3D",

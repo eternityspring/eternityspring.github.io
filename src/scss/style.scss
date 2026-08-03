@@ -232,23 +232,20 @@ ul{
     .description{
       color: $text-gray;
     }
-    .content{
-      text-indent: 2rem;
-    }
   }
 }
 .skill{
-  .item{
-    margin-bottom:2rem;
-    padding-right:2rem;
-  }
-  .text-info{
-    margin-bottom:1rem;
-    font-size: 1.2rem;
-  }
-  .num{
-    display: inline-block;
-    margin-right:1rem;
+  .group{
+    margin-bottom:1.5rem;
+    overflow: hidden;
+    b{
+      display: block;
+      margin-bottom:0.5rem;
+      color:$light;
+    }
+    ul.inline li{
+      margin-bottom:0.3rem;
+    }
   }
 }
 .section:nth-child(even){

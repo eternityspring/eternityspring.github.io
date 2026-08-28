@@ -1,0 +1,532 @@
+{
+  "name": "Wesley Wang",
+  "sex": "Male",
+  "birthday": "1992-08-24",
+  "workSince": "2012-11-01",
+  "exp": [
+    "Since graduation",
+    "years of experience",
+    "years"
+  ],
+  "nickname": "Wesley",
+  "firstName": "Wang",
+  "lastName": "Wesley",
+  "slogan": "Frontend depth, full-stack ownership, and a designer's eye",
+  "highlights": [
+    {
+      "label": "Frontend Experience",
+      "value": "14 Years"
+    },
+    {
+      "label": "Fully Remote",
+      "value": "6 Years"
+    },
+    {
+      "label": "Production LLMs",
+      "value": "2 Years"
+    },
+    {
+      "label": "Focus",
+      "value": "Frontend / Full Stack"
+    }
+  ],
+  "tips": "Press Ctrl / Cmd + P to print this resume",
+  "education": "Associate Degree",
+  "wechat": {
+    "number": "hao_dev",
+    "qr": "./img/wechat-qr.png"
+  },
+  "location": "Shiyan, China",
+  "qq": {
+    "number": "790313188"
+  },
+  "website": "http://79px.com",
+  "github": "https://github.com/eternityspring",
+  "email": "eternityspring@gmail.com",
+  "intro": {
+    "content": [
+      "Frontend engineer with 14 years of experience, including nearly six years working fully remotely across time zones with a U.S. team. Comfortable owning both frontend and full-stack delivery independently.",
+      "Core stack: TypeScript, Angular, Vue 3, Nuxt 4, and Node.js. Over the past year, independently built three full-stack Nuxt 4 applications end to end, covering PostgreSQL schema design and versioned migrations, authentication, layered APIs, data validation, and the complete user interface.",
+      "Since late 2024, have delivered production LLM capabilities including AI-generated summaries, structured Markdown output, long-context handling, streaming responses, and access control.",
+      "<b>AI is reshaping how software gets built and shipped. I want to stay on the delivery side of that change—combining AI with real products and taking ownership of outcomes from idea to production.</b>"
+    ],
+    "technology": {
+      "title": "Core Stack & Tools:",
+      "content": [
+        "TypeScript",
+        "Angular",
+        "Vue 3",
+        "Nuxt 4",
+        "RxJS",
+        "Node.js",
+        "PostgreSQL",
+        "Drizzle ORM",
+        "Tailwind CSS",
+        "SCSS",
+        "Vite",
+        "Vitest"
+      ]
+    }
+  },
+  "experience": [
+    {
+      "time": "Jan 2019–Present",
+      "title": "Remote Work",
+      "intro": "Frontend Engineer / Full-Stack Engineer",
+      "description": "Transitioned to fully remote work in 2019. Initially worked independently across several client projects, leading frontend architecture and product iteration. Joined a U.S. healthcare data services team in December 2020 and have collaborated with the team remotely ever since.",
+      "tips": [
+        {
+          "title": "Key Achievements:",
+          "content": [
+            "Long-term owner of a core module in a healthcare intelligence platform and one of the repository's key contributors; led the module's production LLM integration from late 2024 onward.",
+            "Built a news and email delivery product from zero to one and maintained it independently, accounting for 95% of all commits in the repository.",
+            "While freelancing, led the architecture of a complex browser/server business system, contributed throughout the design-to-delivery lifecycle of a B2B product, and delivered the frontend of a B2C product.",
+            "Delivered consistently with distributed, cross-time-zone teams for six consecutive years."
+          ]
+        }
+      ],
+      "technology": [
+        {
+          "title": "Tech Stack:",
+          "content": [
+            "Angular",
+            "TypeScript",
+            "Vue 3",
+            "RxJS",
+            "Element Plus",
+            "SCSS",
+            "Webpack",
+            "Node.js",
+            "Figma"
+          ]
+        }
+      ]
+    },
+    {
+      "time": "Mar 2018–Jan 2019",
+      "title": "Sunlands Online Education",
+      "intro": "Frontend Engineer",
+      "description": "Developed internal administration and recruitment onboarding systems. Led a sales analytics platform and contributed to a WeChat Mini Program serving more than 300,000 users.",
+      "technology": [
+        {
+          "title": "Tech Stack:",
+          "content": [
+            "Vue",
+            "Node.js",
+            "Element UI",
+            "WeChat Mini Program"
+          ]
+        }
+      ]
+    },
+    {
+      "time": "Dec 2016–Mar 2018",
+      "title": "Youlu Finance",
+      "intro": "Frontend Engineer → Frontend Team Lead",
+      "description": "Owned frontend technology selection and architecture for a lending platform. Led a Vue-based rewrite of the core product and introduced a decoupled frontend/backend architecture, enabling independent frontend releases. Redesigned the development-to-delivery workflow so the team shipped more requirements without sustained overtime. Managed a four-person frontend team.",
+      "technology": [
+        {
+          "title": "Tech Stack:",
+          "content": [
+            "Vue",
+            "Node.js",
+            "SCSS",
+            "Webpack"
+          ]
+        }
+      ]
+    },
+    {
+      "time": "Feb 2015–Nov 2016",
+      "title": "Unisound",
+      "intro": "Frontend Engineer",
+      "description": "Developed two K–12 education products spanning student, teacher, WeChat parent, and administration applications. Packaged the teacher app for Android and iOS with Ionic. Built a Node.js-based automated build pipeline that resolved release-cache and test-environment deployment issues.",
+      "technology": [
+        {
+          "title": "Tech Stack:",
+          "content": [
+            "Angular",
+            "Node.js",
+            "SCSS",
+            "Gulp",
+            "Ionic"
+          ]
+        }
+      ]
+    },
+    {
+      "time": "Mar 2014–Jan 2015",
+      "title": "Shanghai Chuanfei Information Technology",
+      "intro": "Frontend Engineer",
+      "description": "Delivered the desktop site, mobile site, and administration frontend for an inbound travel platform."
+    },
+    {
+      "time": "2012–2013",
+      "title": "Wuhan / Shiyan",
+      "intro": "Early Career",
+      "description": "Graduated from Wuhan Vocational College of Software and Engineering and began my career building Drupal and WordPress themes."
+    }
+  ],
+  "skill": [
+    {
+      "title": "Frontend",
+      "content": [
+        "TypeScript",
+        "JavaScript",
+        "Angular",
+        "Vue 3",
+        "Nuxt 4",
+        "RxJS",
+        "Tailwind CSS",
+        "SCSS",
+        "CSS Animation"
+      ]
+    },
+    {
+      "title": "Backend & Data",
+      "content": [
+        "Node.js",
+        "Nitro",
+        "RESTful APIs",
+        "PostgreSQL",
+        "Drizzle ORM",
+        "MongoDB",
+        "Zod",
+        "Authentication & Authorization"
+      ]
+    },
+    {
+      "title": "AI Engineering",
+      "content": [
+        "Production LLM Integration",
+        "SSE Streaming",
+        "Prompt Design",
+        "Long-Context Handling",
+        "Claude Code",
+        "Codex"
+      ]
+    },
+    {
+      "title": "Engineering & Collaboration",
+      "content": [
+        "Vite",
+        "Webpack",
+        "Vitest",
+        "Karma",
+        "Puppeteer",
+        "Jenkins",
+        "SonarQube",
+        "Git"
+      ]
+    }
+  ],
+  "project": [
+    {
+      "time": "Jan 2026–Present",
+      "title": "Independent Full-Stack Projects",
+      "intro": "Three Nuxt 4 Applications · Personal Projects",
+      "description": "Independently designed and built three full-stack Nuxt 4 applications over the past year, owning everything from the database to the user interface. Coverly is open source.",
+      "tips": [
+        {
+          "title": "Key Contributions:",
+          "content": [
+            "Designed PostgreSQL schemas and versioned migrations, with a type-safe data access layer built on Drizzle ORM.",
+            "Built authentication, administration tools, and business APIs; validated requests and responses with Zod.",
+            "Built Coverly, a DOM-based cover and social card editor that does not rely on canvas, with server-side authentication and agent APIs."
+          ]
+        }
+      ],
+      "technology": [
+        {
+          "title": "Tech Stack:",
+          "content": [
+            "Nuxt 4",
+            "Vue 3",
+            "TypeScript",
+            "Drizzle ORM",
+            "PostgreSQL",
+            "Zod",
+            "Pinia",
+            "Tailwind CSS"
+          ]
+        }
+      ]
+    },
+    {
+      "time": "Dec 2021–Present",
+      "title": "Pharmaceutical Market Access Data Platform",
+      "intro": "U.S. SaaS Data Product · Core Frontend Engineer",
+      "description": "A healthcare intelligence platform supporting pharmaceutical pricing and market access decisions across more than 30 business modules. Made 1,449 commits over four and a half years, including 441 in 2024, and became one of the repository's core contributors.",
+      "tips": [
+        {
+          "title": "Key Contributions:",
+          "content": [
+            "Long-term owner of the core Analog Analysis module, with 718 commits and more than 3,000 file changes spanning indication filters, primary and secondary endpoints, reimbursement-detail queries, filter refactoring, and workspaces.",
+            "Contributed to the design and iteration of Product Landscape, Drug Shortages, Country Guidelines, HTA Browser, International Reference Pricing, and other modules.",
+            "Led production LLM delivery within the module from late 2024, including AI-generated summaries, structured Markdown output, long-context truncation, access control, and saved reports.",
+            "Integrated Amplitude analytics instrumentation to support product usage analysis."
+          ]
+        }
+      ],
+      "technology": [
+        {
+          "title": "Tech Stack:",
+          "content": [
+            "Angular",
+            "TypeScript",
+            "RxJS",
+            "Angular Material",
+            "Tailwind CSS",
+            "Vitest",
+            "Karma",
+            "Puppeteer",
+            "Jenkins",
+            "SonarQube"
+          ]
+        }
+      ]
+    },
+    {
+      "time": "Dec 2020–Jun 2026",
+      "title": "Industry News & Email Delivery Product",
+      "intro": "Independently Built from Zero to One",
+      "description": "Initiated and independently delivered the complete frontend for a subscription-based industry news product. Accounted for 739 of the repository's 778 commits (95%) and maintained the product for five and a half years.",
+      "tips": [
+        {
+          "title": "Key Contributions:",
+          "content": [
+            "Built the user-facing product and administration system, including article publishing and rich-text editing, email subscriptions and delivery, bookmarks, category and keyword search, verification-code login, and account settings.",
+            "Established the frontend infrastructure, including routing, state management, HTTP abstractions, multi-environment builds for QA and production, and the styling system."
+          ]
+        }
+      ],
+      "technology": [
+        {
+          "title": "Tech Stack:",
+          "content": [
+            "Vue 3",
+            "Element Plus",
+            "Froala",
+            "Vue Router",
+            "Vuex",
+            "Axios",
+            "Webpack",
+            "SCSS"
+          ]
+        }
+      ]
+    }
+  ],
+  "earlyProject": [
+    {
+      "time": "Mar 2018–Jul 2018",
+      "title": "Sunlands Online Education",
+      "intro": "Sales Analytics Platform",
+      "description": "Designed the frontend architecture and led iterative delivery of the platform.",
+      "tips": [
+        {
+          "title": "Key Features:",
+          "content": [
+            "Data entry system",
+            "Comparative analytics reports"
+          ]
+        }
+      ],
+      "technology": [
+        {
+          "title": "Tech Stack:",
+          "content": [
+            "Node.js",
+            "Vue",
+            "SCSS",
+            "Webpack",
+            "Element UI"
+          ]
+        }
+      ]
+    },
+    {
+      "time": "Jun 2017–Mar 2018",
+      "title": "Zhongke Financial Services",
+      "intro": "B2P Lending Platform & Administration System",
+      "description": "Delivered ongoing development and refactoring for a lending platform spanning investment products, marketing campaigns, and administration tools, while coordinating the frontend team and improving its workflow.",
+      "tips": [
+        {
+          "title": "Key Features:",
+          "content": [
+            "Administration system",
+            "Marketing incentives including interest-rate coupons and trial credits",
+            "Investment products including parent-child offerings and private placement plans",
+            "Marketing campaign pages",
+            "Full product rewrite in Vue"
+          ]
+        }
+      ],
+      "technology": [
+        {
+          "title": "Tech Stack:",
+          "content": [
+            "Node.js",
+            "Vue",
+            "SCSS",
+            "Webpack",
+            "Bootstrap"
+          ]
+        }
+      ]
+    },
+    {
+      "time": "Since Graduation",
+      "title": "Personal Website",
+      "intro": "Full-Stack Learning Project · Deployed on Alibaba Cloud",
+      "description": "Created after graduation and maintained over the long term. Initially built a custom Drupal theme; after learning Node.js, rebuilt the entire site over one year with an Express and MongoDB backend, an AngularJS and Bootstrap frontend, and RESTful APIs. Its evolution mirrors the growth of my engineering stack.",
+      "tips": [
+        {
+          "title": "Key Features:",
+          "content": [
+            "User registration, login, and administration",
+            "Hierarchical tutorial and documentation management",
+            "Membership and order system for registered users",
+            "Blogging system"
+          ]
+        }
+      ],
+      "technology": [
+        {
+          "title": "Tech Stack:",
+          "content": [
+            "Node.js",
+            "Angular",
+            "SCSS",
+            "Gulp",
+            "Bootstrap",
+            "Express",
+            "MongoDB",
+            "Vue",
+            "Axure"
+          ]
+        }
+      ]
+    },
+    {
+      "time": "Feb 2015–Oct 2015",
+      "title": "Tingshuotong",
+      "intro": "K–12 Online Education Product",
+      "description": "Developed the student, teacher, WeChat parent, and school administration applications. The parent experience used Vue.js; the remaining applications used Angular and Bootstrap with a Gulp-based Node.js toolchain.",
+      "tips": [
+        {
+          "title": "Key Features:",
+          "content": [
+            "Teacher app: publish and grade assignments from a content library; manage classes and students",
+            "Student app: view and complete assigned work",
+            "Parent app: link a child's account through a WeChat Official Account and review assignment status",
+            "School administration: manage teachers, students, and course materials"
+          ]
+        }
+      ],
+      "technology": [
+        {
+          "title": "Tech Stack:",
+          "content": [
+            "Node.js",
+            "Angular",
+            "SCSS",
+            "Gulp",
+            "Bootstrap"
+          ]
+        }
+      ]
+    },
+    {
+      "time": "Nov 2015–Aug 2016",
+      "title": "U-Learning",
+      "intro": "Level-Based Online Education Product",
+      "description": "Part of the same product line as Tingshuotong, with student, teacher, WeChat parent, and administration applications. Also packaged the mobile teacher experience as separate Android and iOS apps with Ionic.",
+      "technology": [
+        {
+          "title": "Tech Stack:",
+          "content": [
+            "Node.js",
+            "Angular",
+            "SCSS",
+            "Gulp",
+            "Bootstrap"
+          ]
+        }
+      ]
+    },
+    {
+      "time": "Mar 2014–Jan 2015",
+      "title": "Trafish",
+      "intro": "Inbound Travel Booking Product",
+      "description": "A JSP application with integrated frontend and backend development. Delivered the customer-facing travel booking site plus order and user administration tools."
+    },
+    {
+      "time": "Oct 2017",
+      "title": "Huanglong Inn",
+      "intro": "Social Party-Game Mini Program",
+      "description": "A side-project collection of party games, available in WeChat Mini Programs under the name “Huanglong Inn.”"
+    }
+  ],
+  "openSource": [
+    {
+      "name": "TimeSugar",
+      "description": "A full-stack Nuxt 4 digital asset marketplace for independent creators, with OAuth login, payments and settlement, licensed downloads, and affiliate distribution (private project)"
+    },
+    {
+      "name": "article-tools",
+      "link": "https://github.com/eternityspring/article-tools",
+      "description": "Tools for designing cover images and formatting content for X and WeChat Official Accounts"
+    },
+    {
+      "name": "eternityspring.github.io",
+      "link": "https://github.com/eternityspring/eternityspring.github.io",
+      "description": "The open-source online resume template powering this page"
+    },
+    {
+      "name": "agent-light",
+      "link": "https://github.com/eternityspring/agent-light",
+      "description": "A physical status-light system for Claude Code"
+    },
+    {
+      "name": "Coverly",
+      "link": "https://github.com/eternityspring/Coverly",
+      "description": "A full-stack Nuxt 4 DOM-based cover and social card editor with authentication and a PostgreSQL data layer"
+    },
+    {
+      "name": "Twelve Meridians 3D",
+      "description": "A hybrid HarmonyOS app built with WebView and TypeScript (private project)"
+    }
+  ],
+  "usually": [
+    {
+      "name": "X",
+      "link": "https://x.com/eternityspring",
+      "description": "Following emerging technology and sharing what I build"
+    },
+    {
+      "name": "GitHub",
+      "link": "https://github.com/eternityspring",
+      "description": "Sharing side projects and connecting with like-minded builders"
+    },
+    {
+      "name": "V2EX",
+      "link": "https://www.v2ex.com",
+      "description": "A Chinese developer community for discovering what people are building"
+    },
+    {
+      "name": "Linux.do",
+      "link": "https://linux.do/",
+      "description": "A community for new developer tools, technical experiments, and AI news"
+    },
+    {
+      "name": "Behance",
+      "description": "Finding visual inspiration and exploring new ideas"
+    },
+    {
+      "name": "CodePen",
+      "link": "http://codepen.io/eternityspring",
+      "description": "Exploring and sharing creative frontend work"
+    }
+  ]
+}

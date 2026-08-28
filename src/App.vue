@@ -1,10 +1,62 @@
 <script>
   import { computed, onMounted, ref } from "vue";
+  import { Languages } from "@lucide/vue";
 
   export default {
+    components: {
+      Languages,
+    },
     setup(){
       const loading = ref(true)
       const showEarly = ref(false)
+      const getInitialLocale = () => {
+        const requestedLocale = new URLSearchParams(window.location.search).get('lang')
+        if (requestedLocale === 'zh' || requestedLocale === 'en') {
+          return requestedLocale
+        }
+
+        const browserLocale = navigator.languages?.[0] || navigator.language || 'en'
+        return browserLocale.toLowerCase().startsWith('zh') ? 'zh' : 'en'
+      }
+      const locale = ref(getInitialLocale())
+      const messages = {
+        zh: {
+          pageTitle: '王烁皓的在线简历',
+          languageSwitch: 'English',
+          languageSwitchLabel: 'Switch to English',
+          sections: {
+            intro: ['介绍', 'Intro', '介绍一些个人基本情况'],
+            experience: ['工作经验', 'Experience', '不同时期简短的从业经历介绍'],
+            skills: ['技能', 'Skills', '我所掌握的工具和技术栈'],
+            projects: ['项目经验', 'Projects', '近期主要做过的一些项目'],
+            sideProjects: ['个人作品', 'Side Projects', '业余时间做的一些东西'],
+            communities: ['常逛', 'Usually', '经常逛的技术或者设计相关网站'],
+            contact: ['联系', 'Contact', '通过这些信息可以联系到我'],
+          },
+          showEarly: count => `查看早期项目（${count} 项）`,
+          hideEarly: '收起早期项目',
+          tipPrefix: '（',
+          tipSuffix: '）',
+        },
+        en: {
+          pageTitle: 'Wesley Wang — Frontend & Full-Stack Engineer',
+          languageSwitch: '中文',
+          languageSwitchLabel: '切换到中文版',
+          sections: {
+            intro: ['About', 'Profile', 'A concise overview of my background and focus'],
+            experience: ['Experience', 'Career', 'Roles, responsibilities, and engineering impact'],
+            skills: ['Skills', 'Expertise', 'Technologies and engineering capabilities'],
+            projects: ['Projects', 'Selected Work', 'Recent products and systems I have built'],
+            sideProjects: ['Side Projects', 'Open Source', 'Products and tools built outside client work'],
+            communities: ['Communities', 'Around the Web', 'Where I follow technology, design, and other builders'],
+            contact: ['Contact', 'Get in Touch', 'Ways to reach me'],
+          },
+          showEarly: count => `View ${count} earlier projects`,
+          hideEarly: 'Hide earlier projects',
+          tipPrefix: ' · ',
+          tipSuffix: '',
+        },
+      }
       const userInfo = ref({
         highlights:[],
         qq:{},
@@ -38,8 +90,17 @@
       const projects = computed(()=> showEarly.value
         ? userInfo.value.project.concat(userInfo.value.earlyProject)
         : userInfo.value.project)
-      let getUserInfo = async ()=>{
-        userInfo.value = await fetch('./resume.json').then(res => res.json())
+      const labels = computed(() => messages[locale.value])
+      const localeHref = computed(() => {
+        const url = new URL(window.location.href)
+        url.searchParams.set('lang', locale.value === 'en' ? 'zh' : 'en')
+        return `${url.pathname}${url.search}${url.hash}`
+      })
+      const getUserInfo = async ()=>{
+        const source = locale.value === 'en' ? './resume-en.json' : './resume.json'
+        userInfo.value = await fetch(source).then(res => res.json())
+        document.documentElement.lang = locale.value === 'en' ? 'en' : 'zh-CN'
+        document.title = labels.value.pageTitle
         loading.value = false
       }
       onMounted(getUserInfo)
@@ -48,6 +109,8 @@
         loading,
         showEarly,
         projects,
+        labels,
+        localeHref,
       }
     }
   }
@@ -57,8 +120,9 @@
   <div class="main-container" v-if="!loading">
     <div class="useful-link no-print">
       <!--<a class="theme-link" href="/index2.html"></a>-->
-      <a class="github-button" href="https://github.com/eternityspring/eternityspring.github.io" title="查看源码">
-        <img src="../public/img/star.svg" alt="Github"><span>Star</span>
+      <a class="language-switch" :href="localeHref" :title="labels.languageSwitchLabel" :aria-label="labels.languageSwitchLabel">
+        <Languages :size="14" :stroke-width="1.8" aria-hidden="true" />
+        <span class="sr-only">{{labels.languageSwitch}}</span>
       </a>
     </div>
     <section class="section section-header">
@@ -131,10 +195,10 @@
         <div class="section-bg section-content-bg"></div>
         <header class="header">
           <div class="content-box">
-            <h2 class="title">介绍&nbsp;/&nbsp;
-              <small><i>Intro</i></small>
+            <h2 class="title">{{labels.sections.intro[0]}}&nbsp;/&nbsp;
+              <small><i>{{labels.sections.intro[1]}}</i></small>
             </h2>
-            <div class="description">介绍一些个人基本情况</div>
+            <div class="description">{{labels.sections.intro[2]}}</div>
           </div>
         </header>
         <div class="section-content">
@@ -156,10 +220,10 @@
         <div class="section-bg section-content-bg"></div>
         <header class="header">
           <div class="content-box">
-            <h2 class="title">工作经验&nbsp;/&nbsp;
-              <small><i>Experience</i></small>
+            <h2 class="title">{{labels.sections.experience[0]}}&nbsp;/&nbsp;
+              <small><i>{{labels.sections.experience[1]}}</i></small>
             </h2>
-            <div class="description">不同时期简短的从业经历介绍</div>
+            <div class="description">{{labels.sections.experience[2]}}</div>
           </div>
         </header>
         <div class="section-content">
@@ -198,10 +262,10 @@
         <div class="section-bg section-content-bg"></div>
         <header class="header">
           <div class="content-box">
-            <h2 class="title">技能&nbsp;/&nbsp;
-              <small><i>Skills</i></small>
+            <h2 class="title">{{labels.sections.skills[0]}}&nbsp;/&nbsp;
+              <small><i>{{labels.sections.skills[1]}}</i></small>
             </h2>
-            <div class="description">我所掌握的工具和技术栈</div>
+            <div class="description">{{labels.sections.skills[2]}}</div>
           </div>
         </header>
         <div class="section-content">
@@ -222,10 +286,10 @@
         <div class="section-bg section-content-bg"></div>
         <header class="header">
           <div class="content-box">
-            <h2 class="title">项目经验&nbsp;/&nbsp;
-              <small><i>Projects</i></small>
+            <h2 class="title">{{labels.sections.projects[0]}}&nbsp;/&nbsp;
+              <small><i>{{labels.sections.projects[1]}}</i></small>
             </h2>
-            <div class="description">近期主要做过的一些项目</div>
+            <div class="description">{{labels.sections.projects[2]}}</div>
           </div>
         </header>
         <div class="section-content">
@@ -258,7 +322,7 @@
           </div>
           <div class="early-toggle no-print">
             <a @click="showEarly = !showEarly">
-              {{showEarly ? '收起早期项目' : '查看早期项目（'+userInfo.earlyProject.length+' 项）'}}
+              {{showEarly ? labels.hideEarly : labels.showEarly(userInfo.earlyProject.length)}}
               <span class="arrow" :class="{open:showEarly}">▾</span>
             </a>
           </div>
@@ -271,10 +335,10 @@
         <div class="section-bg section-content-bg"></div>
         <header class="header">
           <div class="content-box">
-            <h2 class="title">个人作品&nbsp;/&nbsp;
-              <small><i>Side Projects</i></small>
+            <h2 class="title">{{labels.sections.sideProjects[0]}}&nbsp;/&nbsp;
+              <small><i>{{labels.sections.sideProjects[1]}}</i></small>
             </h2>
-            <div class="description">业余时间做的一些东西</div>
+            <div class="description">{{labels.sections.sideProjects[2]}}</div>
           </div>
         </header>
         <div class="section-content">
@@ -299,10 +363,10 @@
         <div class="section-bg section-content-bg"></div>
         <header class="header">
           <div class="content-box">
-            <h2 class="title">常逛&nbsp;/&nbsp;
-              <small><i>Usually</i></small>
+            <h2 class="title">{{labels.sections.communities[0]}}&nbsp;/&nbsp;
+              <small><i>{{labels.sections.communities[1]}}</i></small>
             </h2>
-            <div class="description">经常逛的技术或者设计相关网站</div>
+            <div class="description">{{labels.sections.communities[2]}}</div>
           </div>
         </header>
         <div class="section-content">
@@ -329,10 +393,10 @@
         <div class="section-bg section-content-bg"></div>
         <header class="header">
           <div class="content-box">
-            <h2 class="title">联系&nbsp;/&nbsp;
-              <small><i>Contact</i></small>
+            <h2 class="title">{{labels.sections.contact[0]}}&nbsp;/&nbsp;
+              <small><i>{{labels.sections.contact[1]}}</i></small>
             </h2>
-            <div class="description">通过这些信息可以联系到我</div>
+            <div class="description">{{labels.sections.contact[2]}}</div>
           </div>
         </header>
         <div class="section-content">
@@ -371,7 +435,7 @@
             <h2 class="wow inShow">
               <span class="text-light">{{userInfo.lastName}}</span>&nbsp;{{userInfo.firstName}}
             </h2>
-            <div class="description wow inShow" data-wow-delay="0.05s">{{userInfo.slogan}}（{{userInfo.tips}}）</div>
+            <div class="description wow inShow" data-wow-delay="0.05s">{{userInfo.slogan}}{{labels.tipPrefix}}{{userInfo.tips}}{{labels.tipSuffix}}</div>
           </div>
         </div>
       </div>

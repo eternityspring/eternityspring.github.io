@@ -8,6 +8,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "@lucide/vue": "^1.35.0",
     "vue": "^3.2.16"
   },
   "devDependencies": {
